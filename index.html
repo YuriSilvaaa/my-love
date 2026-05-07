@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Minha Gatinha</title>
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <!-- Link para o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1 id="main-title">Eu te amo muito, minha gatinha linda! ❤️</h1>
+        
+        <div class="hearts-row">💖 ✨ 🎀 ✨ 💖</div>
+        
+        <div class="text-content">
+            <p>Eu amo você, meu amor.</p>
+            <p class="highlight">Boa sorte nas suas provas de hoje!</p>
+            <p>Vai dar tudo certo, gatinha 🙏❤️</p>
+        </div>
+
+        <div class="gallery">
+            <div class="card" onclick="surprise('A My Melody disse que você vai arrasar!')">
+                <img src="images/MyMelody.png" alt="My Melody">
+            </div>
+            <div class="card" onclick="surprise('O Jigglypuff está torcendo por você!')">
+                <img src="images/Jigglypuff.png" alt="Jigglypuff">
+            </div>
+            <div class="card" onclick="surprise('O Eevee te deu um bônus de sorte!')">
+                <img src="images/Eevee.png" alt="Eevee">
+            </div>
+            <div class="card" onclick="surprise('A Maomao sabe que você é a mais inteligente!')">
+                <img src="images/Maomao.png" alt="Maomao">
+            </div>
+        </div>
+        
+        <p id="message-display" style="margin-top: 20px; font-weight: bold; color: #ff4d8d; min-height: 1.5em;"></p>
+    </div>
+
+    <!-- Link para o JS -->
+    <script src="script.js"></script>
+</body>
+</html>

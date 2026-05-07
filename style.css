@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #fff5f8 0%, #ffdeeb 100%);
+    font-family: 'Quicksand', sans-serif;
+    color: #5d4a66;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    padding: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 30px;
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(255, 182, 193, 0.3);
+    z-index: 1;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3.5rem;
+    color: #ff4d8d;
+    margin-bottom: 15px;
+    animation: pulse 2s infinite;
+}
+
+.highlight {
+    font-weight: bold;
+    color: #ff74a4;
+    font-size: 1.5rem;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-15px) scale(1.1);
+    box-shadow: 0 15px 30px rgba(255, 105, 180, 0.3);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Animação de corações caindo (JS vai usar isso) */
+.falling-heart {
+    position: fixed;
+    top: -20px;
+    font-size: 20px;
+    z-index: 0;
+    pointer-events: none;
+    animation: fall linear forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(105vh) rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
